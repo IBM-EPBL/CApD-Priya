@@ -1,0 +1,76 @@
+Tweleve Factor App
+----
+Adam wiggins in 2011 - co-founder of heroku
+why?
+portable - deployment on cloud (AWS,Azure,GCP)-multiclou d,scalable - in ,out ,reduce development time ,cost pf project as well as time
+
+Declarative way of 12 factor principles
+
+1.Code base(Git)
+--------
+versionb control ,braches for each feature you are going develop - deployment 
+eg:github,gitlab - each repository for each microservice
+VCN tools- github desktop,svn,mercurial 
+
+2.Dependencies(Maven,Ant)
+-------
+Explicitly declare nad isolate dependencies  
+Build tool - maven ,ant 
+1.in one repo use the same lib
+adv
+---
+reduce headache of developer to add the jars maulaly to the project 
+speed of development (no manual download and upload to the project just add the dependencies in pom )
+
+3.Config(Config server,Vault)- centartalized conbfigu fro each env 
+----
+Configuration
+Dev - ms1 ,dev database instance url(mysql),jenkins ,ms1 communicates with ms2 (ms2 url of dev)  - webclient,rest template
+QA - ms1 , qa database instance url (mysql),jenkins pipeline ,ms1 communicates with ms2 (ms2 url of qa)  - webclient,rest template
+Stage - (clone of production)ms1,stage database insatnce url(mysql),jenkins pipeline url for stage ,,ms1 communicates with ms2 (ms2 url of stage)  - webclient,rest template
+production- ms1,prod database insatnce url(mysql),jenkins pipeline url for stage ,,ms1 communicates with ms2 (ms2 url of prod)  - webclient,rest template
+production 
+
+4.Backing Services
+-------
+I need to move to microsoft sql server I want to change the creds ,esaily able to replace the services with url 
+
+5.Build,release and Run
+--------------------
+JAR - backend
+WAR -front end file
+
+git commit form git -> jenkins -> server ->run the application
+
+6.proceeses
+----------
+execute each microservice as a stateless process
+
+in memory cache,dticky sessions
+
+7.Port binding
+---------
+Expose microservcie communication through port 
+
+8.Concurrency
+------
+scale out via process model
+
+Diivde single large application into smal differnt application,ecah must run idependtly and scope of scaling individul athings 
+Horizantal scaling 
+
+9.Disposability
+------
+Robustness of how gracefuule handle start and termination of the process without impacting applicatrion
+
+10.dev and prod parity
+------
+simiar tech nology,tech stack and infrastructure from dev to prod all the envs
+
+11.Logs
+----
+auit history will be maintained in dbs ,logs if any issu eor concern ,debugging ,crossing thr root cause easier
+
+12.Admin Processes
+------
+Admin - one time tasks,scripts 
