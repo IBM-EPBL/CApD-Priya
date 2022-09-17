@@ -1,0 +1,17 @@
+IBM DB2
+-----
+RDBMS ,developed in 1983 
+Designed to stor,analyze and retrive adat efficiently 
+Object oritenetd structure as well sa realtionsal structure with XML
+
+IBM DB2 version
+----
+codeweb,........galileo,kepler
+
+IBM DB2 editions
+---
+1.AESE -Advanced Enterprise server edition, ESE (Enterprise server edition) - mid size to large size business organization
+2.WSE- Workgroup server edition - Midsize busness organization
+3.Express - C - running on physical or virtual system
+4.Express edition - entry level and mid size busines organization
+5.Enterprise Dveloper edition - single application developer ,simple prototyp emodel
