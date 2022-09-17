@@ -1,0 +1,72 @@
+IBM Cloud
+----
+suite of cloud computing services - platform as a service or infrsatructure as service 
+IBM cloud supports variety of pgm languages like java 
+suppports serverless computing 
+
+serverless
+--
+\no need to think of servers
+it doesnot mean it will have not servers,it will have servers but that will be amanged by your cloud provider IBM
+those servers will be invisible ,no need to think of managing and interaction wuith him
+
+IBM Cloud - IBM CLoud code Engine etc.,
+AWS - Lmabda ,Dynamo db,Timestream.lambda,api gateway ,appsyn
+Microiosft Azure - Azure functions
+oogle cloud - Google cloud functions
+
+
+IBM Cloud features (16)
+-----
+1,AI/Machine learning
+Watson based AI resoures &tools for builing AI models
+2.Databases
+variety of sql,nosql databases for query,migration and warehouses
+eg:IBM DB2 , Cloudant 
+3.IOT
+----
+service for handling IOT devices databases
+4.blockchain
+-----
+SAAS offering to develop apps,monitor blockchain network
+5.Security
+------
+activity tracking,authentication and access management
+6.Developer  tools
+----
+continuous delivey ,continuous deployment
+7.Integration
+------
+onpremises with cloud - servcies like IBM API Connect ,App Conenct ,Ibm Secure Gateway
+8.Storage
+-------
+Object ,block or file storagw for cloud databases
+9.Logging and monitoring 
+-------
+monitoring tools to log,manage cloud deployments including cloud activity ,tracking ,cloud log analysis 
+10.Networking
+-------
+Cloud network services such as load balaning,firewall,VPN,Content delievery
+11.Compute
+---
+serverless - IBM Cloud code engine
+bare metal vrrtual machines
+12.Quantum
+-----
+ quantum labs or quantum related sdk
+ 
+ 13.containers
+ -----
+ own cloud kuberenets services ,accees container registry - redhat openshift
+ 
+ 14.Analytics
+ ----
+ streamind data which neds datascience tools like apache spark,apache haoop ,ibm watson
+ 
+ 15. Automation
+ ----
+ Turbonomic -resource mgmt tool for automation
+ 
+ 16.IBM Cloud paks
+ ------
+ business automation ,network automarion and security
