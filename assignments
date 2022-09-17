@@ -1,0 +1,5 @@
+Assignments
+-----
+1.Create form of type input text,email,paswsord,radio button text area ,drop down and navigate to sucees page and display files of form in table (CSS,HTML)
+2.For CSS create external style sheet for above task(sepaarte css file and link that in html)
+3. Create sample program for Flask HTTP methods (list or map and perform operations of PUT,GET,DELETE and POST)
