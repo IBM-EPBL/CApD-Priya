@@ -1,0 +1,72 @@
+Data -collection of disticnt small unit of information - text,numbers,media
+
+Database - organized collection of data that can easily managed an accessed
+
+Evolution of database
+-------
+1.filebased storage - flat file 
+advantages
+------
+indexing ,sequential ,random 
+
+2.hierarchial data model
+-------
+parent -child manner
+ root - folder 1 - subfolder 1
+        folder 2 -subfolder 2,subfolder 2
+		folder 3 - subfolder 5 ,subfoler 6
+		
+advantage
+---
+storing data in hierarchial manner
+
+disadvantage
+-------
+it is hierarchial no structural format 
+cant handle many to many relationship
+
+3.Network model
+------
+Charles Bachman in 1970 ,forts kind of DBMS at Honey well
+
+
+4.Relationship model(RDBMS)
+---------
+Relations (tables - rows and columns)
+
+
+
+5. Cloud based database (or) database as a service
+-------
+it faciliates easy storage ,manage and retrivee structure and unstructured data via internet.
+It as database as a service 
+IBM Cloud databaes will host the database on their cloud .All the services will be managed by  the cloud provider
+
+Advanatages
+------
+1.Lower cost - No headache of having servers to run database,no miantennace cost , no staff to manage ,no need if think of power or internet payments or bills
+2. Automate resources s(failover,recovery strategy ,autoscaling)
+3.Increased accessibility(from anywhere any time,internet connectivity)
+
+SQL - Structured query Language
+NOSQL - Not only SQL
+
+SQL                                NOSQL
+----                               -----
+1.Database categorized as RDBMS    1.Non Relational ,hierarchial,distributed or graph based
+2.Fixed schema                      2.Dynamic schema 
+Eg:product atble                     Eg :product tables
+productid,product desc,              product code 
+product avaialbility
+3.Displays data in form of         3.Display data as key value pair(Dynamo db),document based(json),graph based(nodes,edges) ,timestream based - AWS Timstream 
+table so this is table 
+based database
+4.vertical scalable                4.Horizontanl scaling(increasing nuber of instances)
+(RAM,Mmeory)
+5.Structired query language )       5.ubstructured query language .From database to database it varies
+define or manipulate data
+6.Complex queries                   6.Not good for complex queries they do not have sql queries
+7.Hierarchial data storage          7.Hierarchial storage
+
+Mysql,Oracle,Microsoft sql server,  Mongo,document,redis,Neo4j,Dynamo db,IBM Cloudant 
+IBM DB2
