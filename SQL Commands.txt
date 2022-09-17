@@ -1,0 +1,57 @@
+SQL - Strcutured Query Langugae
+----
+Query langugae forRDBMS
+
+1.DDL Commands - Data Definition Language - structure of table (create,alter,drop,truncate)
+2.DML Commands  - Data Manipulation Language - (insert,update ,delete)
+3.DCL Commands  - Data Control Language(grant,revoke)
+4.TCL Commands - Transaction control language (commit,rollback,savepoint)
+5.DQL Command  - Data Query Langugage(select)
+
+DDL syntax
+----
+
+CREATE
+---
+create table tablename(columnname1 datatype1,columnname2 datatype2)
+
+ALTER
+----
+alter table tablename add column columnname datatype1
+alter table tablename modify column columnname datatype;
+alter table tablename drop column columname
+
+DROP
+----
+drop table tablename
+
+TRUNCATE
+-------
+truncate table tablename
+
+
+DML Syntax
+-----
+INSERT
+----
+insert into tablename(valu1,value2......)
+insert into tablename(col1,col2) values(data1,data2)
+
+UPDATE
+-----
+update tablename set columnname=newdata where columname=oldata
+
+delete
+---
+delete tablename where colname=datavalue
+
+DQL Syntax
+------
+select * from column name
+select colname from tablename
+select colname1,colnsame2 from tablename where colname=value
+
+
+
+
+
