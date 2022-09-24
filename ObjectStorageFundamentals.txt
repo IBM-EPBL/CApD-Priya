@@ -1,0 +1,28 @@
+IBM Object Cloud Storage
+-----------
+Object storage
+---
+Computer based data storage where data is stored as objects
+Basically used for storing unstructured data(videis,auodio files,large size files)
+Examples of object storage
+----
+Google drive
+IBM Object cloud storage
+AWS S3
+Dropbox
+Spotify
+
+Advantages
+----
+write read many times
+
+History 
+----
+In 1995 by Gibson .Object storage was proposed at Carnegie Mellon University .
+This person was behind Google File System
+
+Architecture of Object Storage
+-------
+Metadata - metda info about the objects 
+Blobs  - storage nodes 
+BLOB - Binary Large Object - a datatype that stores binary data for complex things like images,viddeos ,anything apart than text data like numbers ,strings 
