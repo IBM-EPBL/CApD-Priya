@@ -1,0 +1,18 @@
+Object Storage vs Database
+--------
+Object Storage - storing unstructured data(videos,audio and large size complex files)
+Database - mutable data (structured data which you may or maynot change in future)
+
+Object Storage vs File Storage vs Block Storage
+----------------------------------------------
+Object storage - slicing data and store as Objects
+File Storage - slicing data and store as files
+Block Storage - slicing data and store as blocks 
+
+Advanatges of Object storage
+----
+1.Good usecase for data analytics
+2.Infinite Scalability - keep adding data and access anytime without any limit or constraint
+3.Faster data retrieval - since object storage provides more capacity 
+4.Reduction in cost -scale out nature of object storage it is less costly to store the data
+5.optimization ofresources - hierarchial structure
