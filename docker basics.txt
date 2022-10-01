@@ -1,0 +1,35 @@
+Traditional Approach - > Single Server -> Single Application
+Modern approach -> Single server -> many applications
+
+Examples of virtual machines are vmware hypervisor,oracle virtualbox
+
+virtualization - server,network,storage 
+
+Server virtulization - splitting servers yto efficiently utilize the reources
+Network Virtualization - splitting various abstracted network resources that was used to deliver starting from hardware to software
+Storage virtualization - splitting storage mechanism 
+
+Containers are similar to virtual machines but they share the common container engine
+
+Docker as contianer Engine where you will be bundling dependencies and configuration which are needed for your applications
+
+History of Docker
+----
+It was emerged in 2013 and cimmediatedly containers exploded its popylarity and both docker and containers always goes hand in hand.
+hykes started this docker projec in France as a n internal project within dotcloud which is platform as a service company
+Docker deputed to public in santa clara at pycon in 2013
+
+docker pull uifd/ui-for-docker
+
+Seeing images
+docker images
+Create the container from image by executing run command
+docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock uifd/ui-for-docker
+Seeing the containers
+docker ps 
+stop the container
+docker stop containerid
+remove the docker image
+docker rmi -f imagename
+
+
