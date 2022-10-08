@@ -1,0 +1,36 @@
+Because of specifications issue we used to go with virtual machines 
+
+Problems of VM(Virtual Machine)
+----
+1.Each VM need a full blown OS
+2.Slow to start
+3.Resource intesive
+
+Containers
+----
+Allow running multiple applications as a light weiht
+use host os
+start quickly
+
+Virtual Mchaine - virtulizing hardware
+Containers - Virtulization OS
+
+Containers virtyuzlaize OS eachcontainer contains only application,libraries an its isolation dependencies .The absence of gesut OS that is why they are fast,portable and light weight
+
+
+Docker Hub - Public repository for docker images
+IBM Container Registry - Private docker image repository
+
+Advantages of IBM Cloud Container Registry
+------
+1.Highy scalabale an encrypted
+2.Multi tenant for a private image registry
+3.Push docker image to ibm cloud container registry and register to IBM Cloud Kuberenetes Service
+
+Docker uses Client Server(Docker Engine) architecture
+
+
+
+
+
+
