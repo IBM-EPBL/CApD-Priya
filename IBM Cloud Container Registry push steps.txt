@@ -1,0 +1,11 @@
+1.Install IBM cloud CLI
+2.Install Docker CLI(Docker Desktop)
+3.Create Environment variable for ibmcloud with path os .../ibm/cloud
+4.install plugin
+5.Login into IBM cloud
+6.Set region to Global
+7.create namespace
+8.login into local docker daemon thread
+9.pull docker image from public docker hub respository
+10.create tag
+11.push the docker image
