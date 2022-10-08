@@ -1,0 +1,14 @@
+1.Creating requirements.txt in your code
+2.Creating Dockerfile in your code
+3.Login using the below command
+docker login --username=''
+To see list of images
+docker images
+4.To build the docker images
+docker build -t testjob1 .
+5.Create repository in docker pub with public access
+6.Create the tag
+docker tag testjob1 saipriyadarshini/testjob1
+(docker tag imagename username/imagename)
+7.PUsh the local docker image to docker hub which is public repository
+docker push saipriyadarshini/testjob1
