@@ -1,0 +1,55 @@
+Serverless IBM Cloud functions
+----------
+Serverless
+----
+Onpremises server or virtual servers like EC2  servers bound to hardware confguring if by any chance if it exhausts any server space
+
+SErverless model
+---
+-user doesn't need to take headache of server details(server configuration ,hardware configuration)
+-Users will just create functions as serverless architecture and then based on request ,memory used user will be charged
+
+IBM Cloudant
+---------
+NOSQL database
+Document storage
+
+Rows in RBMS = Documents in NOSQL
+Tables in RDBMS = Collections in NOSQL
+
+Structure of Document(JSON structure)
+JSON  - Javascript Object Notation
+------
+{
+   "key1":"value1",
+   "key2":"value2"
+}
+
+Each Json structure will be document in NOSQL
+
+Advantages of IBM Cloudant
+----
+1.scalability
+2,High availability (no dependency on other collections)
+3.durability
+4.good Replication 
+
+IBM cloud functions
+-------
+These are function as a service ,based on apache whisk ,they created polygot Function as a service
+Uisng IBM Cloud functions you can create or develop lightweight,scalable code on demand 
+This is also serverless model and you are going to pay for what you are using(no of requests ,memory and excexcution time taken for request) 
+
+
+IBM Cloud functions features
+-----
+`1.Open mindded ecosystem - anuyone can contributre for building blocks
+2.Simple and quickier development 
+3.It can be easily integrate with cognitive services like IBM wartson for your workflows 
+4.pay for what you use
+
+
+use cases where IBM cloud functions are used
+--------
+1.Serverless web application
+2.Mobile applicatoin wiyh serverless backend
