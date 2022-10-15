@@ -1,0 +1,83 @@
+Kubernetes also known as K8S is an open source tool developed by Google as a orechstration(mangining) tool of containers which are present on on-premises,virtul or cloud.
+
+Kuberenetes for
+Deployment
+Scaling 
+Managing of containerized applications
+
+Go language is used to develop the kuberenetes 
+
+problems solved by kuberebets
+-----
+use of containers is increased bcz of miroservices and nano functions
+
+Features of Kuberenetes
+-----
+1.Continuous development,integration and deployment
+2.Containeried infrastructire
+3.focus on application development rather than focussing on deployment
+4.Auto scalable
+5.Env specific infrastructure will be taken care by K8S
+6.loosely coupled infrastructure where each component(micro service or nano service)as a separate unit
+7.efficient utiliation of resources
+8.easy prediction of infrastructure issues
+
+Kuberenetes components of master
+------
+1.etcd - for storing the configuration information which can be used by the nodes
+2.API Server - kubeconfig is a package along with serever which is used for communication
+3.Controller Manager - getting state of the cluster which is daemon thread in non terminating loop to get state
+replication controller
+namespace controller
+health controller
+4.Scheduler
+-allocate pods
+-distribute workload 
+-tracking of utilization of working pods 
+- how many resources are available
+
+Kuberenets of node
+------
+1.kubelet
+intercts with etcd to get the configuration information of network rules,port and forwarding
+2.proxyservice
+exposing services to extetnal host
+3.Container runtime
+Docker which islates applicatiobn on lightweight operating system
+
+components of kuberenetes
+-----
+1.pods 
+2.service
+3.Ingress - traffic from external source to your application,Exgress- traffic from application to external 
+4.Config Map and secret
+5.Datastorgae - datastore or volumes in kuberenetes
+
+
+kuberenetes commands
+---
+#give information about availble nodes
+kubectl get nodes 
+
+#give information about application running inside pods
+kubectl get pods
+
+#describe pos
+kubectl describe pods
+
+#information about cluster and other port information
+kubectl get services
+
+#information about replicasets available
+kubectl get replicaset
+
+#information about deployments
+kubectl get deployment
+
+#logs abot pod
+kubectl logs podname
+
+#deleting service
+kubectl delete service servicename
+
+#rolling out restart
