@@ -1,0 +1,20 @@
+IBM devops tools
+----
+1.IBM cloud foundry - deploy app using buildpak
+2.Docker/k8s/openshift
+3.IBM Code Engine
+
+IBM Cloud foundry
+----
+not fpr creating new applications or migrating new ones of on-premises or off-premises
+Cloud foundry make faster and easier to build ,test,deploy and scale the applications
+platform as a service
+
+Advantages of IBM Cloud foundry
+---
+1.Foundational security
+2.Better and easy predicitions
+3.preductable environment
+
+IBM cloud foundry - deprecated
+IBM Cloud code Engine - built on top of IBM Cloud foundry
