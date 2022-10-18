@@ -1,0 +1,159 @@
+Advantages
+------
+1.Devops is an excellent approach for quick development and deploymenmt of applications
+2.It responds faster to the market changes to improve business growth
+3.Devops escalate business profit by decreasing software delivery timeand other costs
+
+Disadvantage
+----
+1.developing with devops is bit expensive
+2.Devops professionals or expert devops team are less available
+
+Maven build tools pulls the dependency
+-----
+local repository -> central repository -> remote repository 
+
+Planning phase
+----
+Jira tool - for tracking of stories in each sprint with dev capacity configured,how much story points are needed and due date for each story with deadline
+Build tool - Maven ,Gradle as a build tool for their project
+Repository tools- Github ,Bit bucket,Gitlab
+continuous integration -jenkins is like an open source automation server that helps developers to build,test and deployment - dev ,uat2,uat1,stage,prod 
+deployment tools-
+1.Puppet - puppet is an open source configuration,server managemnet and deployment tool used within devops team.
+2.chef - the chef tools could transform infrastructure into code and is basically used as a powerful configuration management automation tool .It configures IT and systemn components like
+network ,storage
+IBM cloud object storage - using chef what storage capacity u need,whether the service should be available public or private (VPN)
+operate tool
+splunk- data management tool for monitoring and searching if any issue happens based on logs,timestamp or any issue
+continuous feedback - 
+service now ticketing tool - for getting the issue resolution and based on resolution the end user can provide the feedback and all those details will be kept for future audit purpose
+
+Devops Architecture features
+----
+1.Automation
+- reduce time consumption
+-catch bugs quickly
+-automate testing or deployment
+2.Collaboration
+-basically development team easily integrates or collaborates with devops team(operations) each team sharing their accountabilityand ownership
+-in industry normally devops team help only for higher environments like production and for lower env they will br having automated env to create the pipeline
+3,Integration
+-applications easily getting integrated with other components so that will help for your continuos development along with continuous integration testing (backend+frontend+other 
+depedent components) testing.
+quicker ,safe and faster deployment
+4.Configuration management
+As applications need to interact with different components in each env we need to have configuration filer being separated from the code.
+configuration file can be written and used during deployment or they can be loaded at runtime depending on the env which they are running
+
+Devops components
+-------
+Dev + Ops
+Dev - Build,Code,Test,Plan
+ops - Monitor,Deploy,operate,Release
+
+Build
+---
+cost of consumption of resourcesevaluated based on pre-defined individual usage,cintrol the usage of resources or capacity
+code
+----
+track changes like actual ,expected behaviour of the application and appropriately arraging in files and folders so that they can be reused
+test
+----
+application is maarked as development complete we should perform manual or automation testing to just identify that atual and expected behavior of the application is
+achieved.Mostly in inustry people will be using the automation script for doing automation testing,manual testing for functiona level testing 
+plan
+----
+using agile methodology planning will be done between development team and operations team so that work will be organized accordingly and that improvres the
+productivity
+
+Monitor
+-------
+continuous monitoring should be there to identify any risk of failure  like whether the system is funtcioning appeopritely or health of the application is normally
+Deploy
+------
+deployment should be configured properly either using scheduler or git coomit id or git code changes 
+operate
+---
+the teams operate in a collaborative way so that they will actively particupate throught out the application lifecycle
+release
+----
+automation for all environments except production environments
+manual deployment release for production environment
+
+
+Devops life cycle
+------
+1.Development
+2.continuous integration
+commit -> Build -> Test ->Stage -> Deploy on higher env
+3.continuous testing
+seleniium ,testng 
+selenium -> testng(to genrate the reports)->result->jenkins pipeline
+4.continuous monitoring
+to i dentify system errors such as server not reachable ,low memory etc 
+5.continuous feedback
+6.continous deployment 
+deployment t ools - chef,puppet,ansible,saltstack
+containers - docker and vagrant
+7.continuous operations 
+
+Devops workflow
+----
+1.sequential flow execution
+2.Fan - in/out in repo
+3.branch level filtering
+4.parallel job execution
+
+
+Devops principles
+-------
+1.End to End responsibility
+2.Continuous improvement
+3.Automate everything
+4.Customer centric action
+5.monitor and test everything
+6.work as one team 
+
+
+Devops practices
+----
+1.self centrci configuration
+2.continuous build
+3.continous integration
+4.continuous delivery
+5.Incremental testing 
+6.Automating everything
+7.Automate release management
+
+Devops tools
+----
+Git
+SVN 
+Chef
+Grdale
+Jenkins
+Docler
+JiraSelenium
+Ansible 
+splunk
+Bamboo
+
+Devops Automation tools
+---
+Infrastructure automation/Configuration automation - chef 
+Deployment automationb - jenkins
+Performance - App Dynamic
+Monitpring - Nagios or splunk
+
+
+Devops pipeline
+--
+source control
+Buil dtool
+Conatiners
+configuration management
+Monitoring
+
+Git -> prepare build -> build -> prepare deployment -> do the deployment
+
