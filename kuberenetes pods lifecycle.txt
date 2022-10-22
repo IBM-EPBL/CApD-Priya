@@ -1,0 +1,7 @@
+Lifecycle
+---
+1.Running - pod is properly tied to a node and it has been created properly
+2.Pending - kind of waiting syate ,pod was accepted by kubernetes cluster but still node and container are not tied
+3.Succeded - with termation as success
+4.Failed - terminated as failure or failed
+5.Unknown or evicted - error in commuicating with the node
