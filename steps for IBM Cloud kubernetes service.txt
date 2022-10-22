@@ -1,0 +1,49 @@
+steps for IBM Cloud Kubernetes Service
+-----
+1.Create a free tier kubernetes cluster 
+2.Make sure kubectl is already installed in your system by running below command in command prompt
+kubectl
+3.Install the kubernetes-service plugin from ibmcloud
+ibmcloud plugin install kubernetes-service
+4.ibmcloud login with email id and pwd
+5.try exceuting the second command from help tab of IBM Cloud kubernetes service(context for your cluster in the IBM Cloud Shell)
+ibmcloud ks cluster config -c ***************
+6.Update the image url of IBM Cloud container registry in the deployment.yaml
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: jobportal
+ spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: flasknode
+   template:
+     metadata:
+       labels:
+         app: flasknode
+     spec:
+       containers:
+       - name: flasknode
+         image: icr.io/jobtest/jobportalapp
+         imagePullPolicy: Always
+         ports:
+         - containerPort: 5000
+7.change the directory to where the job portal application code is present and run below command
+kubectl create -f deployment.yaml
+8.kubectl get deployment
+kubectl get pods
+kubectl describe deployment
+kubectl get replicaset
+9.Expose the application to oustide world through node port
+kubectl expose deployment jobapp --type=NodePort --name=newportal
+10.Get the node port value using below command
+kubectl describe service (name given above)
+11.Get the public ip address 
+worker nodes tab and get public ip address
+12.Exposed url
+publicipaddressofworker:nodeport
+159.122.178.168: 30042
+
+
+
