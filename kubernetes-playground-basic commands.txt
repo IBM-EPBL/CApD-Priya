@@ -1,0 +1,22 @@
+https://labs.play-with-k8s.com/
+
+1.Initialize cluster
+kubeadm init --apiserver-advertise-address $(hostname -i) --pod-netwrok-cidr 10.5.0.0/16
+2.Cluster networking
+kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml
+3.creating ngnix deployment
+kubectl apply -f https://raw.gothubusercontent.com/kubernetes/website/master/content/en/examples/application/nginx-app.yaml
+
+kubernetes commands are
+----
+kubectl describe deployment
+kubectl get pods
+kubectl get deployment
+kubectl get service
+kubectl describe service
+kubectl logs podname
+kubectl delete service servicename
+kubectl delete pod podname
+kubectl delete deployment deploymentname
+kubectl rollout restart deployment deployment(we cant restart for service)
+
