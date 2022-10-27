@@ -1,0 +1,18 @@
+from flask import Flask,request,json
+import os
+app= Flask(__name__)
+food_items={"1":"rice","2":"bean","3":"yam","4":"plants"}
+
+@app.route('/data',methods=['POST','GET'])
+def api():
+    if request.method=='GET':
+        return food_items
+    if request.method=='POST':
+        data=request.json
+        food_items.update(data)
+        return "data is inserted"
+
+if __name__=='__main__':
+    port=os.environ.get('FLASK_PORT') or 8080
+    port=int(port)
+    app.run(port=port,host='0.0.0.0')
