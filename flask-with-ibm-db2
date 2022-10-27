@@ -1,0 +1,8 @@
+import ibm_db
+
+conn= ibm_db.connect("DATABASE=XXXX;HOSTNAME=XXXXXX;PORT=30426;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=XXXX;PWD=XXXX",'','')
+
+sql= "SELECT * FROM COURSE"
+stmt= ibm_db.exec_immediate(conn,sql)
+dictionary= ibm_db.fetch_assoc(stmt)
+print(dictionary)
